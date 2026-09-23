@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg15830"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata15836">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs15834">
+    <linearGradient
+       id="linearGradient16785">
+      <stop
+         style="stop-color:#d0def4;stop-opacity:1"
+         offset="0"
+         id="stop16781" />
+      <stop
+         style="stop-color:#f6f8fb;stop-opacity:1"
+         offset="1"
+         id="stop16783" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient16785"
+       id="linearGradient16787"
+       x1="10.006922"
+       y1="10.127411"
+       x2="10.087246"
+       y2="4.7990274"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.97560978,0,0,0.964006,7.0797132,0.25837349)" />
+  </defs>
+  <g
+     id="g15838">
+    <g
+       id="g16796"
+       transform="translate(-12)">
+      <rect
+         y="4.5"
+         x="15.5"
+         height="6"
+         width="8"
+         id="rect16779"
+         style="opacity:1;fill:url(#linearGradient16787);fill-opacity:1;stroke:#66728c;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path16789"
+         d="M 17.5,6 V 9"
+         style="fill:none;stroke:#0b1a38;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <circle
+         r="1"
+         cy="7.499999"
+         cx="20.500002"
+         id="path16791"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#0b1a38;stroke-width:0.999998;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

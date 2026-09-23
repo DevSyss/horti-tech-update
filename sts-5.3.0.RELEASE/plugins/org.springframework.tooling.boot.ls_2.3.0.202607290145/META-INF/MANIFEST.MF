@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Build-Jdk-Spec: 25
+Bundle-ManifestVersion: 2
+Bundle-Name: Spring Boot Language Server
+Bundle-Vendor: Broadcom
+Bundle-SymbolicName: org.springframework.tooling.boot.ls;singleton:=true
+Bundle-Version: 2.3.0.202607290145
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.12.0",org.ecl
+ ipse.ui.genericeditor;bundle-version="1.0.0",org.eclipse.jface.text;bun
+ dle-version="3.11.100",org.eclipse.jdt.ui;bundle-version="3.13.0",org.e
+ clipse.tm4e.core;bundle-version="0.1.0",org.eclipse.tm4e.ui;bundle-vers
+ ion="0.1.0",org.eclipse.lsp4e;bundle-version="0.15.0",org.eclipse.lsp4j
+ ;bundle-version="0.19.0",org.eclipse.lsp4j.jsonrpc;bundle-version="0.19
+ .0",org.eclipse.ui.workbench,org.eclipse.jface,org.springframework.tool
+ ing.ls.eclipse.commons;bundle-version="0.2.0",org.eclipse.core.resource
+ s,org.eclipse.ui,org.eclipse.ui.ide,org.eclipse.jdt.core,org.eclipse.ui
+ .editors;bundle-version="3.11.100",org.springsource.ide.eclipse.commons
+ .livexp,org.eclipse.wst.sse.ui;bundle-version="1.5.0";resolution:=optio
+ nal,org.eclipse.jdt.annotation,org.eclipse.mylyn.wikitext.markdown,org.
+ eclipse.mylyn.wikitext,org.eclipse.lsp4e.jdt;bundle-version="0.10.0",or
+ g.springsource.ide.eclipse.commons.boot.ls,org.springframework.ide.ecli
+ pse.editor.support,com.google.guava,org.eclipse.core.expressions,org.sp
+ ringsource.ide.eclipse.commons.core;bundle-version="4.17.0",org.springf
+ ramework.tooling.jdt.ls.commons;bundle-version="4.17.0",org.eclipse.jfa
+ ce.notifications,org.eclipse.core.net,com.microsoft.copilot.eclipse.ui;
+ bundle-version="0.17.0";resolution:=optional
+Import-Package: com.google.common.base,com.google.common.collect,com.goo
+ gle.gson,com.google.gson.annotations,com.google.gson.reflect,com.google
+ .gson.stream,org.eclipse.jface.preference,org.osgi.framework
+Bundle-Activator: org.springframework.tooling.boot.ls.BootLanguageServer
+ Plugin
+Bundle-ActivationPolicy: lazy
+Eclipse-BundleShape: dir
+Automatic-Module-Name: org.springframework.tooling.boot.ls
+Bundle-License: Eclipse Public License v1.0;link="https://www.eclipse.or
+ g/legal/epl-v10.html"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+

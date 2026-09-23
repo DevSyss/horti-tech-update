@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   id="svg2"
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4077">
+      <stop
+         style="stop-color:#8abad4;stop-opacity:1;"
+         offset="0"
+         id="stop4079" />
+      <stop
+         id="stop4085"
+         offset="0.61622882"
+         style="stop-color:#cadfec;stop-opacity:1;" />
+      <stop
+         style="stop-color:#90bdd6;stop-opacity:1;"
+         offset="1"
+         id="stop4081" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.94798604,0,0,0.94798541,-13.743547,1040.5667)"
+       xlink:href="#linearGradient4077"
+       id="linearGradient4083"
+       x1="9.2719326"
+       y1="6.3205953"
+       x2="2.9943061"
+       y2="0.13470544"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       height="1.6423057"
+       y="-0.32115283"
+       width="1.6423058"
+       x="-0.32115291"
+       id="filter940"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur942"
+         stdDeviation="0.75745192" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(0,-1036.3622)">
+    <ellipse
+       ry="3.8469605"
+       rx="3.8469596"
+       cy="1044.8622"
+       cx="-8.5"
+       transform="scale(-1,1)"
+       id="path4108-9-1-6-7-7"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.30608;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter940);opacity:0.68167203" />
+    <ellipse
+       ry="2.992079"
+       rx="2.9920814"
+       cy="1044.8622"
+       cx="-8.4999981"
+       style="display:inline;fill:url(#linearGradient4083);fill-opacity:1;stroke:#0e5b8d;stroke-width:1.01584;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4108-9-1-6-7"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#929596;fill-opacity:1;stroke:none;stroke-width:0.25036;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1089"
+       width="14.997186"
+       height="1.4931164"
+       x="736.24786"
+       y="730.96356"
+       transform="matrix(0.70603897,0.70817298,-0.70603895,0.708173,0,0)"
+       ry="0" />
+  </g>
+</svg>
