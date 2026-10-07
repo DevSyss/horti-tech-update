@@ -22,7 +22,7 @@ O desenvolvimento foi realizado como projeto integrador das disciplinas do **3º
 
 ---
 
-## Tecnologias Utilizadas
+## TECNOLOGIAS UTILIZADAS
 
 ### BACKEND
 
@@ -49,16 +49,16 @@ O projeto também conta com integração com **Internet das Coisas (IoT)** para 
 
 ---
 
-## Ferramentas
+## FERRAMENTAS
 
-### Prototipação e Design
+### PROTOTIPAÇÃO E DESIGN
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=figma" />
 </p>
 
 
-### Versionamento
+### VERSIONAMENTO
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=github" />
@@ -66,7 +66,7 @@ O projeto também conta com integração com **Internet das Coisas (IoT)** para 
 
 ---
 
-## Design do Sistema
+## DESIGN DO SISTEMA
 
 O protótipo e a identidade visual da aplicação foram desenvolvidos utilizando o Figma.
 
@@ -95,7 +95,7 @@ O sistema foi estruturado utilizando uma arquitetura Full Stack, dividida em dif
 
 ---
 
-## Funcionalidades
+## FUNCIONALIDADES
 
 Entre as principais funcionalidades planejadas para o sistema estão:
 
@@ -110,7 +110,7 @@ Entre as principais funcionalidades planejadas para o sistema estão:
 
 ---
 
-## Estrutura Tecnológica
+## ESTRUTURA TECNOLÓGICA
 
 ```text
 Frontend
@@ -131,7 +131,7 @@ Sensores e dispositivos
 
 ---
 
-## Objetivo do Projeto
+## OBJETIVO DO PROJETO
 
 O projeto busca aplicar, de forma integrada, os conhecimentos adquiridos durante o curso de **Desenvolvimento de Sistemas**, unindo desenvolvimento web, programação backend, banco de dados e tecnologias IoT em uma única solução.
 
@@ -139,7 +139,7 @@ A proposta é desenvolver um sistema capaz de auxiliar no **monitoramento e gere
 
 ---
 
-## Instituição
+## INSTITUIÇÃO
 
 **SENAI Gaspar Ricardo Junior — CFP 402**
 **Sorocaba — São Paulo**
@@ -149,6 +149,6 @@ A proposta é desenvolver um sistema capaz de auxiliar no **monitoramento e gere
 
 ---
 
-## Licença
+## LICENÇA
 
 Este projeto foi desenvolvido para fins **acadêmicos e educacionais**.
