@@ -24,19 +24,19 @@ O desenvolvimento foi realizado como projeto integrador das disciplinas do **3º
 
 ## Tecnologias Utilizadas
 
-### Backend
+### BACKEND
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=java,spring" />
 </p>
 
-### Frontend
+### FRONTEND
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=html,css,js" />
 </p>
 
-### Banco de Dados
+### BANCO DE DADOS
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=mysql" />
