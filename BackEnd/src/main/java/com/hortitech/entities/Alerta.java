@@ -11,7 +11,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PastOrPresent;
 
 @Entity
-@Table(name = "tb_alerta")
+@Table(name = "tb_alertas")
 public class Alerta {
 
 	@Id

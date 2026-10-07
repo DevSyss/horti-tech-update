@@ -11,9 +11,11 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PastOrPresent;
 
 @Entity
-@Table(name = "tb_regitroTermico")
+@Table(name = "tb_registro")
 public class RegistroTermico {
 
+	
+	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

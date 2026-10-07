@@ -2,11 +2,13 @@ package com.hortitech.entities;
 
 import org.hibernate.validator.constraints.br.CPF;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -21,10 +23,14 @@ public class Colaboradores {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 	
-
-	@Pattern(regexp="^[\\p{L}]+( [\\p{L}+)*$", message = "O Nome Do Aluno Deve Conter Apenas Letras E Espaços")
-    @NotBlank(message = "O Nome É Obrigatório.")
-    private String nome;
+	@OneToOne(cascade = CascadeType.ALL)
+	private Usuario usuario;
+	
+	@NotBlank(message = "O Nome É Obrigatório.")
+	@Pattern(
+	    regexp = "^[\\p{L} ]+$",
+	    message = "O nome deve conter apenas letras e espaços")
+	private String nome;
 	
 	@NotBlank(message = "O CPF É Obrigatótio.")
 	@CPF(message = "CPF Inválido")
@@ -40,16 +46,19 @@ public class Colaboradores {
     @NotBlank(message = "A Senha É Obrigatório.")
     private String senha;
     
-    
+    @NotBlank(message = "O Tipo É Obrigatório")
+	@Column(nullable = false)
+	private String tipo;
 
     
     public Colaboradores() {}
-    public Colaboradores(Long id, String nome, String cpf, String email, String senha) {
+    public Colaboradores(Long id, String nome, String cpf, String email, String senha, String tipo) {
     	this.id = id;
     	this.nome = nome;
     	this.cpf = cpf;
     	this.email = email;
     	this.senha = senha;
+    	this.tipo = tipo;
 
     }
 	public Long getId() {
@@ -83,6 +92,19 @@ public class Colaboradores {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
     
     
 }
