@@ -30,18 +30,11 @@ O desenvolvimento foi realizado como projeto integrador das disciplinas do **3º
   <img src="https://skillicons.dev/icons?i=java,spring" />
 </p>
 
-* Java
-* Spring Boot
-
 ### Frontend
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=html,css,js" />
 </p>
-
-* HTML5
-* CSS3
-* JavaScript
 
 ### Banco de Dados
 
@@ -49,7 +42,6 @@ O desenvolvimento foi realizado como projeto integrador das disciplinas do **3º
   <img src="https://skillicons.dev/icons?i=mysql" />
 </p>
 
-* MySQL
 
 ### IoT
 
@@ -65,16 +57,12 @@ O projeto também conta com integração com **Internet das Coisas (IoT)** para 
   <img src="https://skillicons.dev/icons?i=figma" />
 </p>
 
-* Figma
 
 ### Versionamento
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=github" />
 </p>
-
-* Git
-* GitHub
 
 ---
 
