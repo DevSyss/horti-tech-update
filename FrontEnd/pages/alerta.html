@@ -1,70 +1,275 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f8fbf8">
+
     <title>Alertas | HortiTech Update</title>
+
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/alerta.css">
 </head>
 
 <body class="entity-page">
+
     <div class="app">
-        <aside class="sidebar" id="sidebar"><a class="brand brand-link" href="index.html"><span
-                    class="brand-mark">✳</span><span>hortitech<small>UPDATE • MONITORAMENTO</small></span></a>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <a class="brand brand-link" href="index.html">
+                <span class="brand-mark">✳</span>
+                <span>
+                    hortitech
+                    <small>UPDATE • MONITORAMENTO</small>
+                </span>
+            </a>
+
             <div class="nav-label">MENU PRINCIPAL</div>
-            <nav class="nav"><a href="index.html" data-page="index.html" class=""><span
-                        class="nav-icon">▦</span>Dashboard</a><a href="alerta.html" data-page="alerta.html"
-                    class="active"><span class="nav-icon">◉</span>Alertas</a><a href="cadastroCamara.html"
-                    data-page="cadastroCamara.html" class=""><span class="nav-icon">❄</span>Câmaras frias</a><a
-                    href="historico.html" data-page="historico.html" class=""><span class="nav-icon">⌁</span>Registros
-                    térmicos</a><a href="informacoes.html" data-page="informacoes.html" class=""><span
-                        class="nav-icon">♙</span>Colaboradores</a><a href="suporte.html" data-page="suporte.html"
-                    class=""><span class="nav-icon">♧</span>Suporte</a></nav>
-            <div class="side-bottom"><span class="online"></span>Sistema de monitoramento<strong
-                    class="side-status">Painel operacional</strong></div>
+
+            <nav class="nav">
+                <a href="index.html" data-page="index.html">
+                    <span class="nav-icon">▦</span>
+                    Dashboard
+                </a>
+
+                <a href="alerta.html" data-page="alerta.html" class="active">
+                    <span class="nav-icon">◉</span>
+                    Alertas
+                </a>
+
+                <a href="cadastroCamara.html" data-page="cadastroCamara.html">
+                    <span class="nav-icon">❄</span>
+                    Câmaras frias
+                </a>
+
+                <a href="historico.html" data-page="historico.html">
+                    <span class="nav-icon">⌁</span>
+                    Registros térmicos
+                </a>
+
+                <a href="informacoes.html" data-page="informacoes.html">
+                    <span class="nav-icon">♙</span>
+                    Colaboradores
+                </a>
+
+                <a href="suporte.html" data-page="suporte.html">
+                    <span class="nav-icon">♧</span>
+                    Suporte
+                </a>
+            </nav>
+
+            <div class="side-bottom">
+                <span class="online"></span>
+                Sistema de monitoramento
+                <strong class="side-status">Painel operacional</strong>
+            </div>
+
         </aside>
+
+        <!-- MAIN -->
         <main class="main">
+
+            <!-- TOPBAR -->
             <header class="topbar">
-                <div class="heading-group"><button class="icon-btn mobile-menu" id="menuBtn"
-                        aria-label="Abrir menu">☰</button>
+
+                <div class="heading-group">
+
+                    <button class="icon-btn mobile-menu"
+                        id="menuBtn"
+                        type="button"
+                        aria-label="Abrir menu">
+                        ☰
+                    </button>
+
                     <div>
-                        <div class="eyebrow">HORTITECH / CONTROLE INTELIGENTE</div>
-                        <h1 class="page-title" id="pageTitle">Alertas</h1>
-                        <p class="subtitle" id="pageSubtitle">Acompanhe e gerencie alertas operacionais.</p>
-                    </div>
-                </div>
-                <div class="top-actions"><button class="icon-btn" id="themeBtn" title="Alternar tema"
-                        aria-label="Alternar tema">☾</button>
-                    <div class="avatar">HP</div><button class="icon-btn" id="logoutBtn" title="Sair"
-                        aria-label="Sair">↗</button>
-                </div>
-            </header>
-            <div id="pageContent">
-                <section class="panel table-panel">
-                    <div class="table-toolbar">
-                        <div>
-                            <h2 id="entityTitle">Registros</h2>
-                            <div class="panel-sub">Dados consultados pela API do Spring Boot</div>
+                        <div class="eyebrow">
+                            HORTITECH / CONTROLE INTELIGENTE
                         </div>
-                        <div class="table-actions"><input class="search" id="search" placeholder="Buscar registro..."
-                                aria-label="Buscar registro"><button class="btn" id="newBtn" type="button">＋ Novo
-                                registro</button></div>
+
+                        <h1 class="page-title" id="pageTitle">
+                            Central de alertas
+                        </h1>
+
+                        <p class="subtitle" id="pageSubtitle">
+                            Monitore ocorrências e acompanhe as condições das câmaras frias.
+                        </p>
                     </div>
-                    <div id="records">
-                        <div class="empty">Carregando dados da API...</div>
+
+                </div>
+
+                <div class="top-actions">
+
+                    <button class="icon-btn"
+                        id="themeBtn"
+                        type="button"
+                        title="Alternar tema"
+                        aria-label="Alternar tema">
+                        ☾
+                    </button>
+
+                    <div class="avatar">HP</div>
+
+                    <button class="icon-btn"
+                        id="logoutBtn"
+                        type="button"
+                        title="Sair"
+                        aria-label="Sair">
+                        ↗
+                    </button>
+
+                </div>
+
+            </header>
+
+            <!-- PAGE CONTENT -->
+            <div id="pageContent">
+
+                <!-- INTRODUÇÃO -->
+                <section class="alert-intro">
+                    <div class="alert-intro-content">
+                        <span class="alert-intro-label">
+                            <span class="online"></span>
+                            MONITORAMENTO OPERACIONAL
+                        </span>
+
+                        <h2>Visão geral dos alertas</h2>
+
+                        <p>
+                            Consulte as notificações recebidas pela API,
+                            identifique ocorrências e acompanhe a situação
+                            operacional do sistema.
+                        </p>
+                    </div>
+
+                    <div class="alert-intro-icon" aria-hidden="true">
+                        <span>!</span>
                     </div>
                 </section>
+
+                <!-- INDICADORES -->
+                <section class="alert-summary" aria-label="Resumo dos alertas">
+
+                    <article class="alert-stat">
+                        <div class="alert-stat-top">
+                            <span class="alert-stat-icon icon-total">◉</span>
+                            <span class="alert-stat-caption">GERAL</span>
+                        </div>
+
+                        <span class="alert-stat-label">Total de alertas</span>
+                        <strong id="totalAlerts">—</strong>
+                        <p>Ocorrências recebidas pela API</p>
+                    </article>
+
+                    <article class="alert-stat">
+                        <div class="alert-stat-top">
+                            <span class="alert-stat-icon icon-active">!</span>
+                            <span class="alert-stat-caption">ATENÇÃO</span>
+                        </div>
+
+                        <span class="alert-stat-label">Alertas ativos</span>
+                        <strong id="activeAlerts">—</strong>
+                        <p>Ocorrências que exigem acompanhamento</p>
+                    </article>
+
+                    <article class="alert-stat">
+                        <div class="alert-stat-top">
+                            <span class="alert-stat-icon icon-resolved">✓</span>
+                            <span class="alert-stat-caption">CONCLUÍDOS</span>
+                        </div>
+
+                        <span class="alert-stat-label">Resolvidos</span>
+                        <strong id="resolvedAlerts">—</strong>
+                        <p>Ocorrências identificadas como resolvidas</p>
+                    </article>
+
+                </section>
+
+                <!-- LISTAGEM DE ALERTAS -->
+                <section class="panel table-panel">
+
+                    <div class="table-toolbar">
+
+                        <div class="alert-list-heading">
+                            <div class="alert-section-icon">▤</div>
+
+                            <div>
+                                <h2 id="entityTitle">Histórico de ocorrências</h2>
+
+                                <div class="panel-sub">
+                                    Consulte os alertas registrados pelo sistema.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-actions">
+
+                            <div class="alert-search-wrap">
+                                <span aria-hidden="true">⌕</span>
+
+                                <input
+                                    class="search"
+                                    id="search"
+                                    type="search"
+                                    placeholder="Buscar ocorrência..."
+                                    aria-label="Buscar alertas por descrição ou situação">
+                            </div>
+
+                            <button class="btn"
+                                id="refreshBtn"
+                                type="button">
+                                ↻ Atualizar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="alert-list-description">
+                        <span class="online"></span>
+                        Os registros abaixo são carregados pela API do Spring Boot.
+                    </div>
+
+                    <div id="records" aria-live="polite">
+
+                        <div class="empty">
+                            <strong>Carregando ocorrências...</strong>
+                            <p>Aguarde enquanto consultamos os dados do sistema.</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- RODAPÉ -->
+                <footer class="alert-footer">
+                    <span>✳</span>
+                    <div>
+                        <strong>HortiTech Update</strong>
+                        <p>Monitoramento inteligente para uma gestão mais segura.</p>
+                    </div>
+                </footer>
+
             </div>
+
         </main>
+
     </div>
-    <div class="modal-backdrop" id="modal" aria-hidden="true"></div>
+
+    <!-- MODAL GLOBAL -->
+    <div class="modal-backdrop"
+        id="modal"
+        aria-hidden="true">
+    </div>
+
+    <!-- SCRIPTS -->
     <script src="../script/config.js"></script>
     <script src="../script/api.js"></script>
     <script src="../script/core.js"></script>
     <script src="../script/alerta.js"></script>
-</body>
 
+</body>
 </html>

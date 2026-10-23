@@ -33,7 +33,6 @@ public class ColaboradoresServices {
 	
 		usuarioNovo.setEmail(colaboradores.getEmail());
 		usuarioNovo.setSenha(colaboradores.getSenha());
-		usuarioNovo.setTipo(colaboradores.getTipo());
 		
 		usuarioService.salvar(usuarioNovo);
 		
@@ -51,7 +50,6 @@ public class ColaboradoresServices {
 			atualizado.setCpf(colaboradoresAlterado.getCpf());
 			atualizado.setEmail(colaboradoresAlterado.getEmail());
 			atualizado.setSenha(colaboradoresAlterado.getSenha());
-			atualizado.setTipo(colaboradoresAlterado.getTipo());
 			
 			return repository.save(atualizado);
 		}

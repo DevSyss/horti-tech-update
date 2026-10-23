@@ -35,7 +35,6 @@ public class AlertaServices {
 			
 			Alerta atualizado = existente.get();
 			
-		atualizado.setTipo(alertaAlterado.getTipo());
 		atualizado.setMensagem(alertaAlterado.getMensagem());
 		atualizado.setDataHora(alertaAlterado.getDataHora());
 		atualizado.setStatus(alertaAlterado.isStatus());

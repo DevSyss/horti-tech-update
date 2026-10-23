@@ -46,10 +46,6 @@ public class Colaboradores {
     @Column(nullable = false, length = 255)
     private String senha;
 
-    @NotBlank(message = "O tipo é obrigatório.")
-    @Column(nullable = false, length = 30)
-    private String tipo;
-
     public Colaboradores() {
     }
 
@@ -93,11 +89,4 @@ public class Colaboradores {
         this.senha = senha;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 }

@@ -49,7 +49,7 @@ public class UsuarioServices {
             Usuario atualizado = existente.get();
 
             atualizado.setEmail(usuarioAlterado.getEmail());
-            atualizado.setTipo(usuarioAlterado.getTipo());
+            
 
             if (usuarioAlterado.getSenha() != null &&
                 !usuarioAlterado.getSenha().isEmpty()) {
