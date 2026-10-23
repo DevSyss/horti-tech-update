@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f8fbf8">
+    <title>Visão geral | HortiTech Update</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="dashboard-page">
+    <div class="app">
+        <aside class="sidebar" id="sidebar"><a class="brand brand-link" href="index.html"><span
+                    class="brand-mark">✳</span><span>hortitech<small>UPDATE • MONITORAMENTO</small></span></a>
+            <div class="nav-label">MENU PRINCIPAL</div>
+            <nav class="nav"><a href="index.html" data-page="index.html" class="active"><span
+                        class="nav-icon">▦</span>Dashboard</a><a href="alerta.html" data-page="alerta.html"
+                    class=""><span class="nav-icon">◉</span>Alertas</a><a href="cadastroCamara.html"
+                    data-page="cadastroCamara.html" class=""><span class="nav-icon">❄</span>Câmaras frias</a><a
+                    href="historico.html" data-page="historico.html" class=""><span class="nav-icon">⌁</span>Registros
+                    térmicos</a><a href="informacoes.html" data-page="informacoes.html" class=""><span
+                        class="nav-icon">♙</span>Colaboradores</a><a href="suporte.html" data-page="suporte.html"
+                    class=""><span class="nav-icon">♧</span>Suporte</a></nav>
+            <div class="side-bottom"><span class="online"></span>Sistema de monitoramento<strong
+                    class="side-status">Painel operacional</strong></div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div class="heading-group"><button class="icon-btn mobile-menu" id="menuBtn"
+                        aria-label="Abrir menu">☰</button>
+                    <div>
+                        <div class="eyebrow">HORTITECH / CONTROLE INTELIGENTE</div>
+                        <h1 class="page-title" id="pageTitle">Visão geral</h1>
+                        <p class="subtitle" id="pageSubtitle">Acompanhe a operação e a segurança térmica em tempo real.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-actions"><button class="icon-btn" id="themeBtn" title="Alternar tema"
+                        aria-label="Alternar tema">☾</button>
+                    <div class="avatar">HP</div><button class="icon-btn" id="logoutBtn" title="Sair"
+                        aria-label="Sair">↗</button>
+                </div>
+            </header>
+            <div id="pageContent">
+                <div class="grid stats">
+                    <div class="stat">
+                        <div class="stat-top">Câmaras frias <span class="stat-icon">❄</span></div>
+                        <div class="stat-value" id="sCamaras">—</div>
+                        <div class="stat-note">Unidades cadastradas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-top">Registros térmicos <span class="stat-icon">⌁</span></div>
+                        <div class="stat-value" id="sRegistros">—</div>
+                        <div class="stat-note">Leituras armazenadas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-top">Alertas ativos <span class="stat-icon">◉</span></div>
+                        <div class="stat-value" id="sAlertas">—</div>
+                        <div class="stat-note">Precisam de atenção</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-top">Colaboradores <span class="stat-icon">♙</span></div>
+                        <div class="stat-value" id="sColabs">—</div>
+                        <div class="stat-note">Pessoas cadastradas</div>
+                    </div>
+                </div>
+                <div class="grid dashboard-grid">
+                    <section class="panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Histórico de temperatura</h2>
+                                <div class="panel-sub">Leituras reais retornadas pela API (°C)</div>
+                            </div><span class="pill">DADOS DO BANCO</span>
+                        </div>
+                        <div class="chart-wrap"><canvas id="tempChart"
+                                aria-label="Gráfico de registros térmicos"></canvas></div>
+                    </section>
+                    <section class="panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Resumo de alertas</h2>
+                                <div class="panel-sub">Situação atual dos alertas</div>
+                            </div><span class="stat-icon">◉</span>
+                        </div>
+                        <div id="alertSummary" class="activity-list">
+                            <div class="empty">Buscando dados...</div>
+                        </div>
+                    </section>
+                </div>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Leituras recentes</h2>
+                            <div class="panel-sub">Últimos registros térmicos recebidos do banco</div>
+                        </div><a href="historico.html" class="text-link">Ver todos ↗</a>
+                    </div>
+                    <div id="recentTable">
+                        <div class="empty">Carregando leituras...</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <div class="modal-backdrop" id="modal" aria-hidden="true"></div>
+    <script src="../script/config.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/core.js"></script>
+    <script src="../script/index.js"></script>
+</body>
+
+</html>

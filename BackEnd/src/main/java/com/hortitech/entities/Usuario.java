@@ -32,18 +32,14 @@ public class Usuario {
 	@NotBlank(message = "A Senha É Obrigatório.")
 	private String senha;
 
-	@NotBlank(message = "O Tipo É Obrigatório")
-	@Column(nullable = false)
-	private String tipo;
 
 	public Usuario() {
 	}
 
-	public Usuario(Long id, String email, String senha, String tipo) {
+	public Usuario(Long id, String email, String senha) {
 		this.id = id;
 		this.email = email;
 		this.senha = senha;
-		this.tipo = tipo;
 	}
 
 	public Long getId() {
@@ -68,14 +64,6 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
 	}
 
 }

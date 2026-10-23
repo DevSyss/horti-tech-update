@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Boas-vindas de volta | HortiTech Update</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body class="auth-page">
+    <main class="login-page">
+        <section class="login-art">
+            <div class="brand"><span class="brand-mark">✳</span><span>hortitech<small>UPDATE •
+                        MONITORAMENTO</small></span></div>
+            <div class="art-copy">
+                <div class="eyebrow">TECNOLOGIA QUE CUIDA</div>
+                <h1>Controle inteligente.<br>Operação tranquila.</h1>
+                <p>Monitore temperaturas, gerencie câmaras frias e mantenha seus dados operacionais organizados em uma
+                    plataforma simples e moderna.</p>
+            </div>
+            <div class="art-bottom">© 2026 HortiTech Update · Plataforma de monitoramento</div>
+        </section>
+        <section class="login-form-wrap">
+            <form class="login-form" id="authForm">
+                <div class="brand"><span class="brand-mark">✳</span><span>hortitech<small>UPDATE • ACESSO
+                            SEGURO</small></span></div>
+                <h2>Boas-vindas de volta</h2>
+                <p>Entre com suas credenciais para acessar o painel.</p>
+                <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email"
+                        placeholder="voce@empresa.com" required autocomplete="email"></div>
+                <div class="field"><label for="senha">Senha</label>
+                    <div class="password-wrap"><input id="senha" name="senha" type="password"
+                            placeholder="Mínimo de 6 caracteres" required minlength="6"
+                            autocomplete="current-password"><button type="button" class="password-toggle"
+                            id="togglePass" aria-label="Mostrar ou ocultar senha">◉</button></div>
+                </div><button class="btn auth-submit" type="submit">Entrar na plataforma →</button>
+                <div class="switch-auth">Ainda não tem acesso? <a href="cadastro.html">Criar conta</a></div>
+            </form>
+        </section>
+    </main>
+    <script src="../script/config.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/core.js"></script>
+    <script src="../script/login.js"></script>
+</body>
+
+</html>

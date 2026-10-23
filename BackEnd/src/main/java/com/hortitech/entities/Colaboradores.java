@@ -1,14 +1,13 @@
+
 package com.hortitech.entities;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -18,93 +17,87 @@ import jakarta.validation.constraints.Size;
 @Entity
 @Table(name = "tb_colaboradores")
 public class Colaboradores {
-	
-	@Id
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-	private Usuario usuario;
-	
-	@NotBlank(message = "O Nome É Obrigatório.")
-	@Pattern(
-	    regexp = "^[\\p{L} ]+$",
-	    message = "O nome deve conter apenas letras e espaços")
-	private String nome;
-	
-	@NotBlank(message = "O CPF É Obrigatótio.")
-	@CPF(message = "CPF Inválido")
-	@Column(nullable = false, unique = true, length = 14)
-	private String cpf;
 
+    @NotBlank(message = "O nome é obrigatório.")
+    @Pattern(
+        regexp = "^[\\p{L} ]+$",
+        message = "O nome deve conter apenas letras e espaços."
+    )
+    @Column(nullable = false)
+    private String nome;
+
+    @NotBlank(message = "O CPF é obrigatório.")
+    @CPF(message = "CPF inválido.")
+    @Column(nullable = false, unique = true, length = 14)
+    private String cpf;
+
+    @NotBlank(message = "O e-mail é obrigatório.")
     @Email(message = "E-mail inválido.")
-    @Size(max = 120, message = "O E-mail Deve Ter No Máximo 120 Caracteres.")
-    @Column(unique = true, length = 120)
+    @Size(max = 120, message = "O e-mail deve ter no máximo 120 caracteres.")
+    @Column(nullable = false, unique = true, length = 120)
     private String email;
-    
-    @Column(length = 20, unique = true)
-    @NotBlank(message = "A Senha É Obrigatório.")
+
+    @NotBlank(message = "A senha é obrigatória.")
+    @Size(min = 6, message = "A senha deve ter pelo menos 6 caracteres.")
+    @Column(nullable = false, length = 255)
     private String senha;
-    
-    @NotBlank(message = "O Tipo É Obrigatório")
-	@Column(nullable = false)
-	private String tipo;
 
-    
-    public Colaboradores() {}
-    public Colaboradores(Long id, String nome, String cpf, String email, String senha, String tipo) {
-    	this.id = id;
-    	this.nome = nome;
-    	this.cpf = cpf;
-    	this.email = email;
-    	this.senha = senha;
-    	this.tipo = tipo;
+    @NotBlank(message = "O tipo é obrigatório.")
+    @Column(nullable = false, length = 30)
+    private String tipo;
 
+    public Colaboradores() {
     }
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-		
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getSenha() {
-		return senha;
-	}
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-	public Usuario getUsuario() {
-		return usuario;
-	}
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
 
-    
-    
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }

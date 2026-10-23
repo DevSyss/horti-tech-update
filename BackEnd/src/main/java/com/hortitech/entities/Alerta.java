@@ -18,9 +18,6 @@ public class Alerta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-	@NotBlank
-	private String tipo;
-	
 	@NotBlank 
 	private String mensagem;
 	
@@ -33,9 +30,8 @@ public class Alerta {
 	
 
 	public Alerta() {}
-	public Alerta(Long id, String tipo, String mensagem, LocalDateTime dataHora, boolean status) {
+	public Alerta(Long id, String mensagem, LocalDateTime dataHora, boolean status) {
 		this.id = id;
-		this.tipo = tipo;
 		this.mensagem = mensagem;
 		this.dataHora = dataHora;
 		this.status = status;
@@ -45,12 +41,7 @@ public class Alerta {
 	}
 	public void setId(Long id) {
 		this.id = id;
-	}
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	
 	}
 	public String getMensagem() {
 		return mensagem;

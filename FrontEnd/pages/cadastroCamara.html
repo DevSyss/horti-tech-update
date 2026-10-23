@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f8fbf8">
+    <title>Câmaras frias | HortiTech Update</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cadastroCamara.css">
+</head>
+
+<body class="entity-page">
+    <div class="app">
+        <aside class="sidebar" id="sidebar"><a class="brand brand-link" href="index.html"><span
+                    class="brand-mark">✳</span><span>hortitech<small>UPDATE • MONITORAMENTO</small></span></a>
+            <div class="nav-label">MENU PRINCIPAL</div>
+            <nav class="nav"><a href="index.html" data-page="index.html" class=""><span
+                        class="nav-icon">▦</span>Dashboard</a><a href="alerta.html" data-page="alerta.html"
+                    class=""><span class="nav-icon">◉</span>Alertas</a><a href="cadastroCamara.html"
+                    data-page="cadastroCamara.html" class="active"><span class="nav-icon">❄</span>Câmaras frias</a><a
+                    href="historico.html" data-page="historico.html" class=""><span class="nav-icon">⌁</span>Registros
+                    térmicos</a><a href="informacoes.html" data-page="informacoes.html" class=""><span
+                        class="nav-icon">♙</span>Colaboradores</a><a href="suporte.html" data-page="suporte.html"
+                    class=""><span class="nav-icon">♧</span>Suporte</a></nav>
+            <div class="side-bottom"><span class="online"></span>Sistema de monitoramento<strong
+                    class="side-status">Painel operacional</strong></div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div class="heading-group"><button class="icon-btn mobile-menu" id="menuBtn"
+                        aria-label="Abrir menu">☰</button>
+                    <div>
+                        <div class="eyebrow">HORTITECH / CONTROLE INTELIGENTE</div>
+                        <h1 class="page-title" id="pageTitle">Câmaras frias</h1>
+                        <p class="subtitle" id="pageSubtitle">Gerencie suas câmaras e os limites de temperatura.</p>
+                    </div>
+                </div>
+                <div class="top-actions"><button class="icon-btn" id="themeBtn" title="Alternar tema"
+                        aria-label="Alternar tema">☾</button>
+                    <div class="avatar">HP</div><button class="icon-btn" id="logoutBtn" title="Sair"
+                        aria-label="Sair">↗</button>
+                </div>
+            </header>
+            <div id="pageContent">
+                <section class="panel table-panel">
+                    <div class="table-toolbar">
+                        <div>
+                            <h2 id="entityTitle">Registros</h2>
+                            <div class="panel-sub">Dados consultados pela API do Spring Boot</div>
+                        </div>
+                        <div class="table-actions"><input class="search" id="search" placeholder="Buscar registro..."
+                                aria-label="Buscar registro"><button class="btn" id="newBtn" type="button">＋ Novo
+                                registro</button></div>
+                    </div>
+                    <div id="records">
+                        <div class="empty">Carregando dados da API...</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <div class="modal-backdrop" id="modal" aria-hidden="true"></div>
+    <script src="../script/config.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/core.js"></script>
+    <script src="../script/cadastroCamara.js"></script>
+</body>
+
+</html>

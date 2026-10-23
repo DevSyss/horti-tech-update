@@ -163,3 +163,8 @@ th{letter-spacing:1.4px}
 .modal{animation:modalPop .22s cubic-bezier(.2,.8,.2,1)}
 @keyframes modalPop{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Estrutura HTML sem estilos inline */
+.brand-link{color:inherit;text-decoration:none}.heading-group{display:flex;align-items:center;gap:12px}.side-status{display:block;margin:7px 0 0;color:var(--text)}.table-actions{display:flex;gap:9px;flex-wrap:wrap}.text-link{color:var(--green);font-size:12px;text-decoration:none;font-weight:800}.activity-content{flex:1}
+
+.activity-dot-normal{background:var(--green)}.activity-dot-danger{background:var(--danger)}

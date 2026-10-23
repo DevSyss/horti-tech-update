@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Crie sua conta | HortiTech Update</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body class="auth-page">
+    <main class="login-page">
+        <section class="login-art">
+            <div class="brand"><span class="brand-mark">✳</span><span>hortitech<small>UPDATE •
+                        MONITORAMENTO</small></span></div>
+            <div class="art-copy">
+                <div class="eyebrow">TECNOLOGIA QUE CUIDA</div>
+                <h1>Controle inteligente.<br>Operação tranquila.</h1>
+                <p>Monitore temperaturas, gerencie câmaras frias e mantenha seus dados operacionais organizados em uma
+                    plataforma simples e moderna.</p>
+            </div>
+            <div class="art-bottom">© 2026 HortiTech Update · Plataforma de monitoramento</div>
+        </section>
+        <section class="login-form-wrap">
+            <form class="login-form" id="authForm">
+                <div class="brand"><span class="brand-mark">✳</span><span>hortitech<small>UPDATE • ACESSO
+                            SEGURO</small></span></div>
+                <h2>Crie sua conta</h2>
+                <p>Preencha os dados para começar a usar a plataforma.</p>
+                <div class="field"><label for="nome">Nome completo</label><input id="nome" name="nome"
+                        placeholder="Como podemos te chamar?" required autocomplete="name" pattern="[A-Za-zÀ-ÿ ]+"
+                        title="Digite apenas letras e espaços"></div>
+                <div class="field"><label for="cpf">CPF</label><input id="cpf" name="cpf" type="text"
+                        inputmode="numeric" placeholder="000.000.000-00" required maxlength="14" autocomplete="off">
+                </div>
+                <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email"
+                        placeholder="voce@empresa.com" required autocomplete="email"></div>
+                <div class="field"><label for="senha">Senha</label>
+                    <div class="password-wrap"><input id="senha" name="senha" type="password"
+                            placeholder="Mínimo de 6 caracteres" required minlength="6"
+                            autocomplete="new-password"><button type="button" class="password-toggle" id="togglePass"
+                            aria-label="Mostrar ou ocultar senha">◉</button></div>
+                </div><button class="btn auth-submit" type="submit">Criar conta →</button>
+                <div class="switch-auth">Já tem uma conta? <a href="login.html">Fazer login</a></div>
+            </form>
+        </section>
+    </main>
+    <script src="../script/config.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/core.js"></script>
+    <script src="../script/cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f8fbf8">
+    <title>Suporte | HortiTech Update</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/suporte.css">
+</head>
+
+<body class="entity-page">
+    <div class="app">
+        <aside class="sidebar" id="sidebar"><a class="brand brand-link" href="index.html"><span
+                    class="brand-mark">✳</span><span>hortitech<small>UPDATE • MONITORAMENTO</small></span></a>
+            <div class="nav-label">MENU PRINCIPAL</div>
+            <nav class="nav"><a href="index.html" data-page="index.html"><span class="nav-icon">▦</span>Dashboard</a><a
+                    href="alerta.html" data-page="alerta.html"><span class="nav-icon">◉</span>Alertas</a><a
+                    href="cadastroCamara.html" data-page="cadastroCamara.html"><span class="nav-icon">❄</span>Câmaras
+                    frias</a><a href="historico.html" data-page="historico.html"><span
+                        class="nav-icon">⌁</span>Registros térmicos</a><a href="informacoes.html"
+                    data-page="informacoes.html"><span class="nav-icon">♙</span>Colaboradores</a><a href="suporte.html"
+                    data-page="suporte.html" class="active"><span class="nav-icon">♧</span>Suporte</a></nav>
+            <div class="side-bottom"><span class="online"></span>Sistema de monitoramento<strong
+                    class="side-status">Central de ajuda</strong></div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div class="heading-group"><button class="icon-btn mobile-menu" id="menuBtn"
+                        aria-label="Abrir menu">☰</button>
+                    <div>
+                        <div class="eyebrow">HORTITECH / CENTRAL DE AJUDA</div>
+                        <h1 class="page-title" id="pageTitle">Suporte</h1>
+                        <p class="subtitle" id="pageSubtitle">Encontre orientações rápidas para usar o sistema com
+                            segurança.</p>
+                    </div>
+                </div>
+                <div class="top-actions"><button class="icon-btn" id="themeBtn" title="Alternar tema"
+                        aria-label="Alternar tema">☾</button>
+                    <div class="avatar">HP</div><button class="icon-btn" id="logoutBtn" title="Sair"
+                        aria-label="Sair">↗</button>
+                </div>
+            </header>
+            <div class="support-layout" id="pageContent">
+                <section class="panel support-hero">
+                    <div class="support-hero-icon">✳</div>
+                    <div>
+                        <div class="eyebrow">HORTITECH UPDATE</div>
+                        <h2>Como podemos ajudar?</h2>
+                        <p>Consulte as orientações abaixo ou envie uma solicitação para a equipe responsável.</p>
+                    </div>
+                </section>
+                <div class="support-cards">
+                    <article class="panel support-card"><span class="support-card-icon">❄</span>
+                        <h3>Câmaras frias</h3>
+                        <p>Cadastre a identificação da câmara e configure os limites de temperatura definidos para sua
+                            operação.</p><a class="text-link" href="cadastroCamara.html">Gerenciar câmaras ↗</a>
+                    </article>
+                    <article class="panel support-card"><span class="support-card-icon">⌁</span>
+                        <h3>Registros térmicos</h3>
+                        <p>Consulte as leituras armazenadas e acompanhe o histórico para identificar variações.</p><a
+                            class="text-link" href="historico.html">Ver histórico ↗</a>
+                    </article>
+                    <article class="panel support-card"><span class="support-card-icon">◉</span>
+                        <h3>Alertas</h3>
+                        <p>Revise alertas abertos e acompanhe a situação de cada ocorrência.</p><a class="text-link"
+                            href="alerta.html">Abrir alertas ↗</a>
+                    </article>
+                </div>
+                <section class="panel support-faq">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Perguntas frequentes</h2>
+                            <div class="panel-sub">Respostas rápidas para as tarefas mais comuns</div>
+                        </div>
+                    </div>
+                    <details>
+                        <summary>Como cadastrar uma câmara fria?</summary>
+                        <p>Acesse <b>Câmaras frias</b>, selecione <b>Novo registro</b>, preencha a identificação e os
+                            limites térmicos e salve. O cadastro será enviado à API configurada.</p>
+                    </details>
+                    <details>
+                        <summary>Por que o gráfico não mostra dados?</summary>
+                        <p>O gráfico utiliza leituras recebidas da API. Confira se o Spring Boot e o MySQL estão ativos,
+                            se existem registros térmicos e se a rota configurada em <code>script/config.js</code>
+                            corresponde ao controller.</p>
+                    </details>
+                    <details>
+                        <summary>O cadastro ou login apresentou erro?</summary>
+                        <p>Confira o e-mail, os campos obrigatórios e a mensagem exibida. Se o erro persistir, verifique
+                            a rota de autenticação e as regras de validação do backend.</p>
+                    </details>
+                    <details>
+                        <summary>Os dados não carregam?</summary>
+                        <p>Verifique se o backend está rodando em <code>http://localhost:8080</code>, se o endpoint
+                            existe e se o CORS permite a origem do front-end.</p>
+                    </details>
+                </section>
+                <section class="panel support-contact">
+                    <div>
+                        <h2>Fale com o suporte</h2>
+                        <p class="panel-sub">Descreva o problema. O botão prepara uma mensagem no seu aplicativo de
+                            e-mail.</p>
+                    </div>
+                    <form id="supportForm" class="support-form">
+                        <div class="form-grid">
+                            <div class="field"><label for="supportName">Seu nome</label><input id="supportName"
+                                    name="nome" required placeholder="Nome completo"></div>
+                            <div class="field"><label for="supportEmail">E-mail para retorno</label><input
+                                    id="supportEmail" name="email" type="email" required placeholder="voce@empresa.com">
+                            </div>
+                            <div class="field full"><label for="supportTopic">Assunto</label><select id="supportTopic"
+                                    name="assunto" required>
+                                    <option value="">Selecione o assunto</option>
+                                    <option>Login ou cadastro</option>
+                                    <option>Câmaras frias</option>
+                                    <option>Registros térmicos</option>
+                                    <option>Alertas</option>
+                                    <option>Problema técnico</option>
+                                </select></div>
+                            <div class="field full"><label for="supportMessage">Como podemos ajudar?</label><textarea
+                                    id="supportMessage" name="mensagem" required minlength="10"
+                                    placeholder="Descreva o que aconteceu e em qual página..."></textarea></div>
+                        </div><button class="btn" type="submit">Preparar solicitação ↗</button>
+                        <p class="support-note">Este formulário não grava chamados no banco. Para isso, o backend
+                            precisa ter uma entidade e um endpoint de suporte.</p>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../script/config.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/core.js"></script>
+    <script src="../script/suporte.js"></script>
+</body>
+
+</html>
