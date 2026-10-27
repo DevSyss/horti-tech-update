@@ -1,13 +1,18 @@
+
 package com.hortitech.repositories;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.hortitech.entities.Usuario;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+@Repository
+public interface UsuarioRepository
+        extends JpaRepository<Usuario, Long> {
 
-	Optional<Usuario> findByEmail(String email); 
+    Optional<Usuario> findByEmail(String email);
 
+    boolean existsByEmail(String email);
 }

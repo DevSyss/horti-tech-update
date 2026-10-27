@@ -1,0 +1,26 @@
+HORTITECH UPDATE — FRONTEND INTEGRADO
+
+1. Execute o BackEnd Spring Boot em http://localhost:8080.
+2. Execute esta pasta com Live Server em http://localhost:5500 (ou 127.0.0.1:5500), conforme o SecurityConfig.
+3. Abra FrontEnd/index.html via Live Server. Se não tiver sessão, pode abrir pages/login.html ou pages/cadastro.html.
+4. As rotas utilizadas são exatamente:
+   GET/POST/PUT/DELETE /api/alerta
+   GET/POST/PUT/DELETE /api/camaraFria
+   GET/POST/PUT/DELETE /api/registroTermico
+   GET/POST/PUT/DELETE /api/colaboradores
+   POST /api/usuarios/login
+5. O navegador chama a API; ele nunca se conecta diretamente ao MySQL. Os dados só serão persistidos se o Spring Boot estiver ativo e conectado ao banco db_hortiTechUpdate.
+
+ATENÇÃO — PROBLEMAS NO BACKEND FORNECIDO QUE PRECISAM SER CORRIGIDOS:
+
+A) UsuarioServices.salvarUsuario(@Valid Usuario usuario) retorna null. O cadastro deste frontend usa POST /api/colaboradores porque o método ColaboradoresServices.salvar cria também um Usuario. Se quiser usar /api/usuarios/cadastro, implemente salvarUsuario; do jeito enviado, essa rota não cadastra nada.
+
+B) @NotBlank não é válido para LocalDateTime, Double ou boolean. Em Alerta, remova @NotBlank de dataHora e status; use @NotNull em dataHora e deixe boolean como primitivo ou use Boolean + @NotNull. Em RegistroTermico, use @NotNull em temperatura, umidade e dataHora. Caso contrário, a validação pode provocar erro HTTP 500 ao cadastrar alertas/registros.
+
+C) No AlertaController.buscar, teste alerta.isPresent() em vez de alerta != null. O Optional retornado pelo service não será null normalmente.
+
+D) ColaboradoresController não possui @CrossOrigin, mas o SecurityConfig libera as origens localhost:5500 e 127.0.0.1:5500. Use uma dessas origens para executar o frontend.
+
+E) Segurança: Colaboradores tem senha armazenada também na entidade de colaborador. Não exponha senhas em telas públicas nem retorne esse campo em APIs de listagem. O frontend nunca mostra a senha na tabela.
+
+F) A senha de login é comparada com BCrypt no UsuarioServices.login. O cadastro via /api/colaboradores usa UsuarioServices.salvar, que aplica BCrypt, então o login deve funcionar com esse fluxo.
